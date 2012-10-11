@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <twetzel> -- <co-founder> -- <trendgegner>
 
 # THANKS
 
-    <name>
+    <boilerplate>
 
 # TECHNOLOGY COLOPHON
 
