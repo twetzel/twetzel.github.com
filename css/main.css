@@ -100,6 +100,7 @@ body {
 
 
 #hire {
+  z-index: 999;
   display: block;
   position: fixed;
   right: -150px;
@@ -153,13 +154,14 @@ html {
 
 
 
+
 .container {
   
   display: block;
   position: relative;
   width: 70%;
   margin: 20px auto 50px;
-  
+  min-width: 550px;
   
 }
 .header {
