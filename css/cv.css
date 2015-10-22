@@ -132,7 +132,7 @@ a:hover { color: #069; }
   
   a:before, a:after { display: none; text-decoration: none !important; color: #555; }
   
-  .skills { color: #ddd; }
+  .skills { color: #ddd; font-size: 12px; height: 20px; }
   .pic { width: 165px; }
   
   dl { page-break-inside : avoid }
