@@ -35,7 +35,7 @@ body * { box-sizing: border-box; }
   padding: 20px 0;
 }
 
-.pic { width: 190px; }
+.pic { width: 190px; margin: 0 auto; border-radius: 150px; overflow: hidden; box-shadow: 0 1px 2px 0 rgba(0,0,0,.42); }
 .pic img {
   max-width: 100%; width: 100%;
 }
@@ -60,15 +60,24 @@ h1, h2, h3, h4 {
 h1 { font-size: 34px; font-weight: 600; line-height: 40px; }
 h2 { font-size: 26px; }
 h3 { font-size: 24px; margin: 40px 0 10px; color: #069;}
+h3:first-child { margin-top: 0; }
+
+p.hand {
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  font-style: italic;
+}
+p.date { text-align: center; padding: 30px 20px 0; font-style: italic; margin: 0; line-height: 20px; font-size: 10px }
 
 dt { color: #777; }
 dd { margin-bottom: 20px; }
 
 dd .position { font-weight: 600; }
-dd .company {  font-weight: 400; color: #666; }
+dd .company {  font-weight: 400; color: #555; }
 dd a.company { display: block; }
 
-a { color: #09c; text-decoration: none; }
+a { color: #555; text-decoration: none; }
 a:hover { color: #069; }
 
 
@@ -81,12 +90,23 @@ a:hover { color: #069; }
   background: #ccc;
 }*/
 
+.icon-sk:before { content: "\e904"; }
+
+
 .skills.bad .s1,
 .skills.average .s1, .skills.average .s2,
 .skills.ok .s1, .skills.ok .s2, .skills.ok .s3,
 .skills.good .s1, .skills.good .s2, .skills.good .s3, .skills.good .s4,
 .skills.excelent .s1, .skills.excelent .s2, .skills.excelent .s3, .skills.excelent .s4, .skills.excelent .s5 {
   color: #069;
+}
+
+.skills.bad .s1:before,
+.skills.average .s1:before, .skills.average .s2:before,
+.skills.ok .s1:before, .skills.ok .s2:before, .skills.ok .s3:before,
+.skills.good .s1:before, .skills.good .s2:before, .skills.good .s3:before, .skills.good .s4:before,
+.skills.excelent .s1:before, .skills.excelent .s2:before, .skills.excelent .s3:before, .skills.excelent .s4:before, .skills.excelent .s5:before {
+  content: "\e905";
 }
 
 
@@ -98,8 +118,10 @@ a:hover { color: #069; }
 }
 
 
+
 @media all {
-	.page-break	{ display: none; }
+	.page-break { display: none; }
+	.print-only { display: none; }
 }
 
 @media only screen and (min-width: 768px) {
@@ -108,6 +130,7 @@ a:hover { color: #069; }
     width: 50%;
     float: left;
   }
+  .row .cell.full { width: 100%; float: none; padding: 0 20px 20px; }
   
   .corset { padding: 50px; }
   
@@ -115,27 +138,33 @@ a:hover { color: #069; }
 
 @media only print {
   
-  .page-break { display: block; page-break-before: always;  }
+  .page-break { display: block; page-break-after: always;  }
+  .print-only { display: block; page-break-before: always; }
   
-  body { padding: 0; margin: 0; font-size: 10pt; line-height: 16pt; }
-  .corset { padding: 0; padding-left: 40pt; margin: 0; max-width: none; }
+  body { padding: 0; margin: 0; font-size: 12pt; line-height: 18pt; }
+  .corset { padding: 0; margin: 0; max-width: none; }
   
-  .row { width: 100%; margin: 0 -30px; }
+  .row { width: 21cm; margin: 0; }
   .row .cell {
     width: 50%;
     float: left;
-    padding: 0 30px 10px;
+    padding: 0 20px 10px;
+    page-break-inside: always;
   }
-  h1 { font-size: 20pt; }
-  h2 { font-size: 16pt; }
-  h3 { font-size: 13pt; }
+  .row .cell.full { width: 100%; float: none; padding: 0 10px 10px;}
+  
+  h1 { font-size: 24pt; line-height: 30pt; }
+  h2 { font-size: 19pt; line-height: 24pt; }
+  h3 { font-size: 16pt; /* border-bottom: solid 1px #ccc; */ }
+  p.hand { font-size: 12pt; }
   
   a:before, a:after { display: none; text-decoration: none !important; color: #555; }
   
   .skills { color: #ddd; font-size: 12px; height: 20px; }
-  .pic { width: 165px; }
+  .pic { width: 126pt; }
   
   dl { page-break-inside : avoid }
+  .paragraph { page-break-inside : avoid }
   
 }
 
