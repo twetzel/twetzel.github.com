@@ -1,0 +1,145 @@
+fieldset,hr{border:0;padding:0}button,html,input,select,textarea{color:#222}body{font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border-top:1px solid #ccc;margin:1em 0}img{vertical-align:middle}fieldset{margin:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+/* ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### */
+
+
+body {
+  position: relative;
+  padding: 50px 0;
+  background: #f1f1f1;
+  color: #666;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: "Lucida Grande", "Lucida", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+}
+
+body * { box-sizing: border-box; }
+
+.corset, .section, .row, .cell, .pic, h1, h2, h3, h4, p, dl, dd, dt, .skills { 
+  display: block; position: relative;
+  margin: 0; padding: 0;
+}
+
+.corset {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.23);
+  font-size: inherit;
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.pic { width: 190px; }
+.pic img {
+  max-width: 100%; width: 100%;
+}
+
+
+.row .cell {
+  padding: 0 30px 30px;
+}
+
+ul {
+  margin: 0; padding: 0;
+  list-style-type: circle;
+  padding-left: 22px;
+  font-size: inherit;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 400;
+  line-height: 30px;
+}
+h1 { font-size: 34px; font-weight: 600; line-height: 40px; }
+h2 { font-size: 26px; }
+h3 { font-size: 24px; margin: 40px 0 10px; color: #069;}
+
+dt { color: #777; }
+dd { margin-bottom: 20px; }
+
+dd .position { font-weight: 600; }
+dd .company {  font-weight: 400; color: #666; }
+dd a.company { display: block; }
+
+a { color: #09c; text-decoration: none; }
+a:hover { color: #069; }
+
+
+.skills { margin: 0 0 10px; height: 30px; color: #ccc; font-size: 20px; }
+/*.s1, .s2, .s3, .s4, .s5 {
+  float: left; width: 30px;
+  margin: 0 2px;
+  padding: 0 5px;
+  height: 10px;
+  background: #ccc;
+}*/
+
+.skills.bad .s1,
+.skills.average .s1, .skills.average .s2,
+.skills.ok .s1, .skills.ok .s2, .skills.ok .s3,
+.skills.good .s1, .skills.good .s2, .skills.good .s3, .skills.good .s4,
+.skills.excelent .s1, .skills.excelent .s2, .skills.excelent .s3, .skills.excelent .s4, .skills.excelent .s5 {
+  color: #069;
+}
+
+
+.icn {
+  width: 24px;
+  text-align: center;
+  display: inline; display: inline-block;
+  color: #069;
+}
+
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .row .cell {
+    width: 50%;
+    float: left;
+  }
+  
+  .corset { padding: 50px; }
+  
+}
+
+@media only print {
+  
+  .page-break { display: block; page-break-before: always;  }
+  
+  body { padding: 0; margin: 0; font-size: 10pt; line-height: 16pt; }
+  .corset { padding: 0; padding-left: 40pt; margin: 0; max-width: none; }
+  
+  .row { width: 100%; margin: 0 -30px; }
+  .row .cell {
+    width: 50%;
+    float: left;
+    padding: 0 30px 10px;
+  }
+  h1 { font-size: 20pt; }
+  h2 { font-size: 16pt; }
+  h3 { font-size: 13pt; }
+  
+  a:before, a:after { display: none; text-decoration: none !important; color: #555; }
+  
+  .skills { color: #ddd; }
+  .pic { width: 165px; }
+  
+  dl { page-break-inside : avoid }
+  
+}
+
+
+
+/* ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### */
+.ir,.visuallyhidden{border:0;overflow:hidden}.hidden,.invisible{visibility:hidden}.ir{background-color:transparent}.ir:before{content:"";display:block;width:0;height:100%}.hidden{display:none!important}.visuallyhidden{clip:rect(0 0 0 0);height:1px;margin:-1px;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}@media print{blockquote,img,pre,tr{page-break-inside:avoid}*{background:0 0!important;box-shadow:none!important;text-shadow:none!important}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
