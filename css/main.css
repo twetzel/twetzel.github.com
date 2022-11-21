@@ -7,7 +7,7 @@ body {
 }
 
 
-#hire {
+#hire, #opentowork {
   z-index: 999;
   display: block;
   position: fixed;
@@ -38,7 +38,11 @@ font-family: 'Nothing You Could Do', cursive; font-weight: 400;
 box-shadow: inset 0 1px 1px 0 #fff, inset 0 -1px 1px 0 #fff, 0 2px 3px 0 #555;
 }
 
-#hire:hover, #hire:active {
+#opentowork {
+	text-align: center;
+}
+
+#hire:hover, #hire:active, #opentowork:hover, #opentowork:active {
   background: #cfe7fa;
 background: -moz-linear-gradient(top,  #cfe7fa 0%, #6393c1 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfe7fa), color-stop(100%,#6393c1));
@@ -48,7 +52,7 @@ background: -ms-linear-gradient(top,  #cfe7fa 0%,#6393c1 100%);
 background: linear-gradient(to bottom,  #cfe7fa 0%,#6393c1 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 );
 }
-#hire:active { color: #c00;}
+#hire:active, #opentowork:active { color: #c00;}
 
 html { 
   background: #e5e5e5 url("./../img/bg_pattern.jpg") left top repeat;
