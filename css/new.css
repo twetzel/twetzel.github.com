@@ -12,6 +12,31 @@ body {
 
 
 
+.language-select {
+  display: block; position: absolute;
+  top: 20px; right: 20px;
+  line-height: 15px;
+  z-index: 22;
+}
+.language-select .lang {
+  display: block; display: inline-block; position: relative;
+  width: 20px; height: 15px;
+  background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.42;
+  margin: 0 2px;
+}
+.language-select .lang.de { background-image: url('../img/flag-de.png'); }
+.language-select .lang.en { background-image: url('../img/flag-en.png'); }
+
+.language-select .lang.active { opacity: 1.0; }
+
+.language-select .lang:hover, .language-select .lang:focus { opacity: 0.7; }
+.language-select .lang:active { opacity: 1.0; }
+
+
+
 
 
 #hire, #opentowork {
@@ -223,6 +248,7 @@ p {
     margin-right: auto;
     margin-left: auto;
     max-width: 100%;
+    position: relative;
 }
 
 .mainBody {
@@ -257,7 +283,32 @@ a.btn {
   background: #000;
 }
 
+a.lnk {
+  display: inline-block; position: relative;
+  margin: 10px 20px; padding: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #90A4AE;
+  line-height: 2;
+  font-size: 1.2rem;
+  vertical-align: top;
+}
+a.lnk i, a.lnk i:before {
+  color: #fff;
+  font-size: 110%;
+  line-height: 2;
+}
 
+
+
+hr {
+  display: block; position: relative;
+  margin: 20px 10%; padding: 0;
+  height: 0;
+  border: none;
+  border-top: solid 1px rgba(255,255,255,.27);
+  border-bottom: solid 1px #000;
+}
 
 
 
@@ -295,6 +346,7 @@ a.btn {
     flex: 0 0 25%;
     max-width: 25%;
   }
+  .language-select { right: 40px; }
 }
 
 @media (min-width: 1264px) {
